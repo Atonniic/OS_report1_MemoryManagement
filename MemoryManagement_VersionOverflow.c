@@ -21,7 +21,7 @@ void CallStackFunc( int level ) {
     printf( "Heap level = %d, Heap address = %p\n", level, heapVariables );
     printf( "---------------------------------\n" );
     
-    if ( level < 3 ) {
+    if ( 1 ) {
         //call function
         CallStackFunc( level + 1 );
     }
@@ -32,11 +32,11 @@ void CallStackFunc( int level ) {
 
 int main() {
     //print address ของตัวแปรแต่ละตัว
-    printf("address of globalVariables1 = %p\n", &globalVariables1);
-    printf("address of globalVariables2 = %p\n", &globalVariables2);
-    printf("address of globalVariables3 = %p\n", &globalVariables3);
-    printf("address of globalVariables4 = %p\n", &globalVariables4);
-    printf("address of globalVariables5 = %p\n", &globalVariables5);
+    // printf("address of globalVariables1 = %p\n", &globalVariables1);
+    // printf("address of globalVariables2 = %p\n", &globalVariables2);
+    // printf("address of globalVariables3 = %p\n", &globalVariables3);
+    // printf("address of globalVariables4 = %p\n", &globalVariables4);
+    // printf("address of globalVariables5 = %p\n", &globalVariables5);
 
     //call function
     CallStackFunc( 0 );
