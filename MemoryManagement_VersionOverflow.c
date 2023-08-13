@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 //set ค่าตัวแปร 
-int globalVariables1, globalVariables2, globalVariables3;
-int globalVariables4 = 4, globalVariables5= 5;
+// int globalVariables1, globalVariables2, globalVariables3;
+// int globalVariables4 = 4, globalVariables5= 5;
 
 //function call stack
 void CallStackFunc( int level ) {
