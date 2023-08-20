@@ -5,8 +5,8 @@
 int globalVariables1, globalVariables2, globalVariables3;
 int globalVariables4 = 4, globalVariables5= 5;
 
-//function call stack
-void CallStackFunc( int level ) {
+//function call memory
+void CallMemoryManagement( int level ) {
     //จองพื้นทีของ stack
     int stackVariables = level;
 
@@ -23,7 +23,7 @@ void CallStackFunc( int level ) {
     
     if ( level < 3 ) {
         //call function
-        CallStackFunc( level + 1 );
+        CallMemoryManagement( level + 1 );
     }
 
     //free *คืนพื้นที่ที่จองไว้ 
@@ -39,7 +39,7 @@ int main() {
     printf("address of globalVariables5 = %p\n", &globalVariables5);
 
     //call function
-    CallStackFunc( 0 );
+    CallMemoryManagement( 0 );
 
     //จบการทำงาน
     return 0;
